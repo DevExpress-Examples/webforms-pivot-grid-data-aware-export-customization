@@ -5,10 +5,6 @@
 <!-- default badges end -->
 
 # Pivot Grid for Web Forms -  How to Customize an Exported Excel Document (Data Aware Export)
-<!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/t355654/)**
-<!-- run online end -->
-
 
 The [PivotXlsxExportOptions](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxPivotGrid.PivotXlsxExportOptions) or [PivotXlsExportOptions](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxPivotGrid.PivotXlsExportOptions) class provides access to events that allow you to customize the Pivot Grid in the exported document.
 
