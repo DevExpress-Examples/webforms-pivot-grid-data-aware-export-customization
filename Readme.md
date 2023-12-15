@@ -11,7 +11,7 @@
 <!-- default file list end -->
 # Data Aware Export - How to add custom header and footer to an exported Excel document
 <!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/t355654/)**
+**[[Run Online]](https://codecentral.devexpress.com/128577092/)**
 <!-- run online end -->
 
 
