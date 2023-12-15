@@ -10,9 +10,6 @@
 * [Default.aspx.cs](./CS/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/Default.aspx.vb))
 <!-- default file list end -->
 # Data Aware Export - How to add custom header and footer to an exported Excel document
-<!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/t355654/)**
-<!-- run online end -->
 
 
 <p>To customize an exported document, create a new instance of the <a href="https://documentation.devexpress.com/AspNet/clsDevExpressWebASPxPivotGridPivotXlsxExportOptionstopic.aspx">PivotXlsxExportOptions</a> class. It provides the <a href="https://documentation.devexpress.com/CoreLibraries/DevExpressXtraPrintingXlsxExportOptionsEx_CustomizeSheetHeadertopic.aspx">CustomizeSheetHeader</a> and <a href="https://documentation.devexpress.com/CoreLibraries/DevExpressXtraPrintingXlsxExportOptionsEx_CustomizeSheetFootertopic.aspx">CustomizeSheetFooter</a> events that allow adding custom rows and cells before and after a pivot grid control. If you export data to an *.XLS document, use the <a href="https://documentation.devexpress.com/AspNet/clsDevExpressWebASPxPivotGridPivotXlsExportOptionstopic.aspx">PivotXlsExportOptions</a> class instead of providing a similar functionality. </p>
