@@ -1,8 +1,8 @@
-﻿<%@ Page Language="vb" AutoEventWireup="true"  CodeFile="Default.aspx.vb" Inherits="_Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true"  CodeFile="Default.aspx.cs" Inherits="_Default" %>
 
-<%@ Register assembly="DevExpress.Web.ASPxPivotGrid.v23.2, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" namespace="DevExpress.Web.ASPxPivotGrid" tagprefix="dxwpg" %>
+<%@ Register assembly="DevExpress.Web.ASPxPivotGrid.v21.2, Version=21.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" namespace="DevExpress.Web.ASPxPivotGrid" tagprefix="dxwpg" %>
 
-<%@ Register assembly="DevExpress.Web.v23.2, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" namespace="DevExpress.Web" tagprefix="dx" %>
+<%@ Register assembly="DevExpress.Web.v21.2, Version=21.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" namespace="DevExpress.Web" tagprefix="dx" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -13,10 +13,10 @@
 <body>
     <form id="form1" runat="server">
     <div>
-
+    
         <dx:ASPxButton ID="ASPxButton1" runat="server" Height="22px" OnClick="ASPxButton1_Click" Text="Export" Width="124px">
         </dx:ASPxButton>
-
+    
     </div>
     <dxwpg:ASPxPivotGrid ID="ASPxPivotGrid1" runat="server" 
         DataSourceID="SqlDataSource1" Width="100%" ClientIDMode="AutoID" IsMaterialDesign="False" >
@@ -57,6 +57,7 @@
             ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
             ProviderName="<%$ ConnectionStrings:ConnectionString.ProviderName %>" 
             SelectCommand="SELECT * FROM [CustomerReports]"></asp:SqlDataSource>
+
     </form>
 </body>
 </html>

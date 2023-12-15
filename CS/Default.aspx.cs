@@ -16,8 +16,16 @@ public partial class _Default : System.Web.UI.Page {
         PivotXlsxExportOptions options = new PivotXlsxExportOptions();
         options.CustomizeSheetHeader += options_CustomizeSheetHeader;
         options.CustomizeSheetFooter += options_CustomizeSheetFooter;
+        options.CustomizeCell += Options_CustomizeCell;
         ASPxPivotGridExporter1.ExportXlsxToResponse("Pivot", options);
 
+    }
+    private void Options_CustomizeCell(CustomizePivotCellEventArgs e) {
+        if (e.ExportArea == DevExpress.XtraPivotGrid.PivotExportArea.Data) {
+            e.Formatting.BackColor = Color.Azure;
+            e.Formatting.Font.Italic = true;
+        }
+        e.Handled = true;
     }
     void options_CustomizeSheetHeader(DevExpress.Export.ContextEventArgs e) {
         e.ExportContext.AddRow(new CellObject[] { 
